@@ -1,40 +1,42 @@
-# README
+# Happex
 
-Create a branch of this repo for your project.
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/does-not-contain-msg.svg)](https://forthebadge.com)
 
-Replace this README with an introduction to your project, including instructions for how to view the deployed web page and requirements for building it.
+An exploration of the connections between world happiness and various other factors.
 
-You may use this space for a full description of your questions and results, or you may point to other documents, including your web page.
+Automatically deployed to [happex.bogodynamics.io](https://happex.bogodynamics.io/)
 
-# Project
+---
 
-Pick a data set, and ask some questions about it. To explore your questions, build a web app with Python and PostgreSQL which exposes views of the data in tables, forms for entering queries, and/or graphs and other visualizations.
+## Getting started
 
-Project teams are posted here.
+### Dependencies
 
-For ideas you can go to
+Building Happex requires:
+* Python 3.6 or newer
+* Flask might be installed automatically but I want another bullet
+* So yeah flask
 
-- [kaggle](https://www.kaggle.com/datasets)
-- [Yelp](https://www.yelp.com/dataset)
-- [FRED](https://fred.stlouisfed.org/)
-- Etc.
+### Building and Running Locally
 
-# Teams
+Do this:
 
-This is a team assignment. See the Project Teams spreadsheet in the General module for your teammate. This is Project 1.
+- `python3 -m venv .venv` (may need to remove the `.` on Windows)
+- `source .venv/bin/activate`
+- `pip install -r requirements.txt`
 
-Please submit a peer review to Canvas. It should be a short sentence about your own contribution and your partner's contribution in each of the following areas:
+Then...
 
-- availability and commitment to meeting
-- communication
-- relevant technical skill
-- willingness to work 
-  
+- `env FLASK_ENV=development flask run`
 
- 
+(or `export FLASK_ENV=development` and `flask run` as much as you want)
 
- 
+---
 
- 
+## Dataset
 
- 
+We used the [World Happiness](https://worldhappiness.report/ed/2019/) dataset.
+
+Bottom text
