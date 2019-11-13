@@ -15,9 +15,9 @@ Automatically deployed to [happex.bogodynamics.io](https://happex.bogodynamics.i
 ### Dependencies
 
 Building Happex requires:
-* Python 3.6 or newer
-* Flask might be installed automatically but I want another bullet
-* So yeah flask
+- Python 3.6 or newer
+- Flask might be installed automatically but I want another bullet
+- So yeah flask
 
 ### Building and Running Locally
 
