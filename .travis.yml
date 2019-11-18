@@ -9,7 +9,6 @@ dist: bionic
 
 install:
   - pip install -r requirements.txt
-  - pip install pylint
 
 script:
-  - black --diff --check .
+  - env PYTHONPATH=. pylint happex/
