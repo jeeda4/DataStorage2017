@@ -2,20 +2,20 @@ FROM python:3
 
 WORKDIR /usr/local/src
 
-RUN groupadd -r gradgyde &&\
-    useradd --no-log-init -r -g gradgyde gradgyde &&\
+RUN groupadd -r happex &&\
+    useradd --no-log-init -r -g happex happex &&\
     mkdir -p /run/wsgi &&\
-    chown gradgyde:gradgyde /usr/local/src /run/wsgi
+    chown happex:happex /usr/local/src /run/wsgi
 
 VOLUME /run/wsgi
 
-COPY --chown=gradgyde:gradgyde requirements.txt .
+COPY --chown=happex:happex requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir uwsgi
 
-COPY --chown=gradgyde:gradgyde . .
+COPY --chown=happex:happex . .
 
-USER gradgyde
+USER happex
 
 ENTRYPOINT ["uwsgi", "--ini", "wsgi.ini"]
